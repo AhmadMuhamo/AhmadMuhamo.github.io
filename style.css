@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    margin: 0 20px;
+    padding-bottom: 10px;
+    transition: border-bottom 0.4s;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    border-bottom: 2px solid rgb(248, 80, 2);
+}
+
+.brand {
+    font-size: 150%;
+    color: #ccc;
+    transition: transform 0.4s, color 0.4s;
+    transform: scale(1);
+}
+
+.brand:hover,
+.brand:active {
+    transform: scale(1.5);
+    color: rgb(248, 80, 2);
+}
+
+.search-field {
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: border 0.4s;
+    padding: 10px 30px;
+    background-color: white;
+    background-image: url('search-icon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    align-self: center;
+    margin-left: 150px;
+}
+
+.search-field:focus {
+    outline-color: transparent;
+    border: 2px solid rgb(248, 80, 2);
+}
+
+header {
+    padding: 50px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+table,
+thead,
+td {
+    border: 1px solid #000;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 50px;
+}
+
+thead {
+    font-weight: bold;
+    font-size: 120%;
+    color: rgb(248, 80, 2);
+}
+
+td {
+    padding: 10px;
+}
+
+thead tr td {
+    padding: 20px;
+}
+
+section {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-details h2 {
+    align-self: center;
+}
+
+.details {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.detail-item {
+    width: 30%;
+    height: 300px;
+    background-color: #eee;
+    border: 1px solid rgb(248, 80, 2);
+}
+
+.details .detail-item:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 110%;
+    color: rgb(248, 80, 2);
+}
+
+.details .detail-item:first-child span {
+    color: #000;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.section-payments {
+    background-color: #eee;
+    align-items: center;
+}
+
+h2:after {
+    display: block;
+    content: "";
+    width: 50%;
+    border-bottom: 2px solid rgb(248, 80, 2);
+    margin: 20px auto;
+}
+
+.amount:before {
+    content: "\0024";
+    color: rgb(1, 77, 1);
+}
+
+footer {
+    background-color: #000;
+    color: #ccc;
+    padding: 50px;
+    text-align: center;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hash</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="charts.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="brand">Hash</a>
+            <input type="search" class="search-field" name="search" id="search" placeholder="Subscriber ID">
+            <div class="nav-items">
+                <a class="nav-link" href="#details">Details</a>
+                <a class="nav-link" href="#payments">Payments</a>
+            </div>
+        </nav>
+        <div id="unpaid-balance" style="width: 60%; height: 400px; margin: 100px auto;"></div>
+    </header>
+    <section class="section-details" id="details">
+        <h2>Details</h2>
+        <div class="details">
+            <div class="detail-item">
+                <p>Hashrate(24h): <span>123</span></p>
+                <p>Efficiency: <span>423</span></p>
+                <p>Unpaid Balance: <span class="amount">234</span></p>
+            </div>
+            <div class="detail-item" id="accepted-shares" style="width: 30%; height: 300px;"></div>
+            <div class="detail-item" id="hash-rate" style="width: 30%; height: 300px;"></div>
+        </div>
+    </section>
+    <section class="section-payments" id="payments">
+        <h2>Payments History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        <p>Date</p>
+                    </td>
+                    <td>
+                        <p>Transaction ID</p>
+                    </td>
+                    <td>
+                        <p>Amount</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>03-07-2018</p>
+                    </td>
+                    <td>
+                        <p>T123534g234234gd3234</p>
+                    </td>
+                    <td>
+                        <p class="amount">20</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>03-07-2018</p>
+                    </td>
+                    <td>
+                        <p>T123534g234234gd3234</p>
+                    </td>
+                    <td>
+                        <p class="amount">20</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>03-07-2018</p>
+                    </td>
+                    <td>
+                        <p>T123534g234234gd3234</p>
+                    </td>
+                    <td>
+                        <p class="amount">20</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>03-07-2018</p>
+                    </td>
+                    <td>
+                        <p>T123534g234234gd3234</p>
+                    </td>
+                    <td>
+                        <p class="amount">20</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>03-07-2018</p>
+                    </td>
+                    <td>
+                        <p>T123534g234234gd3234</p>
+                    </td>
+                    <td>
+                        <p class="amount">20</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        Copyright &copy; 2018 <a href="https://cloud9ers.com/" target="_blank">Cloud Niners</a>. All rights are reserved.
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>
