@@ -13,120 +13,149 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#" class="brand">Hash</a>
-            <input type="search" class="search-field" name="search" id="search" placeholder="Subscriber ID">
-            <div class="nav-items">
-                <a class="nav-link" href="#details">Details</a>
-                <a class="nav-link" href="#payments">Payments</a>
+    <nav>
+        <a href="#" class="brand">Hash</a>
+        <input type="text" class="search-field" name="search" id="search" placeholder="Subscriber ID">
+        <div class="nav-items">
+            <a class="nav-link" href="#details">Details</a>
+            <a class="nav-link" href="#payments">Payments</a>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>1RXCEsSTA4QupmHHznRy2vVSp9QXNGKZZ</h1>
+            <div class="stats">
+                <div class="stats-item">
+                    <p class="heading-text">Hash Rate (24H)</p>
+                    <p class="value-big">2.02
+                        <span class="unit">&nbsp;MH/s</span>
+                    </p>
+                </div>
+                <div class="stats-item">
+                    <p class="heading-text">Efficiency</p>
+                    <p class="value-big">100.00%
+                        <span>&nbsp;</span>
+                    </p>
+                    <p class="value-small">0.00%
+                        <span>&nbsp;rejected</span>
+                    </p>
+                </div>
+                <div class="stats-item">
+                    <p class="heading-text">Unpaid Balance</p>
+                    <p class="value-big">0.00543
+                        <span>&nbsp;BTC</span>
+                    </p>
+                    <p class="value-small">30.01
+                        <span>&nbsp;USD</span>
+                    </p>
+                </div>
             </div>
-        </nav>
+        </header>
         <div id="unpaid-balance" style="width: 60%; height: 400px; margin: 100px auto 0 auto;"></div>
         <p class="graph-caption">Contrary to popular belief, Lorem Ipsum is not simply random text. </p>
-    </header>
-    <section class="section-details" id="details">
-        <h2>Details</h2>
-        <div class="details">
-            <div class="detail-item graph">
-                <p>Hashrate(24h):
-                    <span>123</span>
-                </p>
-                <p>Efficiency:
-                    <span>423</span>
-                </p>
-                <p>Unpaid Balance:
-                    <span class="amount">234</span>
-                </p>
-            </div>
-            <div class="graph">
-                <div class="detail-item" id="accepted-shares" style="width: 100%; height: 300px;"></div>
-                <p class="graph-caption">Lorem Ipsum is not simply random text. </p>
-            </div>
+        <section class="section-details" id="details">
+            <h2>Details</h2>
+            <div class="details">
+                <!-- <div class="detail-item graph">
+                    <p>Hashrate(24h):
+                        <span>123</span>
+                    </p>
+                    <p>Efficiency:
+                        <span>423</span>
+                    </p>
+                    <p>Unpaid Balance:
+                        <span class="amount">234</span>
+                    </p>
+                </div> -->
+                <div class="graph">
+                    <div class="detail-item" id="accepted-shares" style="width: 100%; height: 300px;"></div>
+                    <p class="graph-caption">Lorem Ipsum is not simply random text. </p>
+                </div>
 
-            <div class="graph">
-                <div class="detail-item" id="hash-rate" style="width: 100%; height: 300px;"></div>
-                <p class="graph-caption">Lorem Ipsum is not simply random text. </p>
+                <div class="graph">
+                    <div class="detail-item" id="hash-rate" style="width: 100%; height: 300px;"></div>
+                    <p class="graph-caption">Lorem Ipsum is not simply random text. </p>
+                </div>
+
+
             </div>
-
-
-        </div>
-    </section>
-    <section class="section-payments" id="payments">
-        <h2>Payments History</h2>
-        <table>
-            <thead>
-                <tr>
-                    <td>
-                        <p>Date</p>
-                    </td>
-                    <td>
-                        <p>Transaction ID</p>
-                    </td>
-                    <td>
-                        <p>Amount</p>
-                    </td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <p>03-07-2018</p>
-                    </td>
-                    <td>
-                        <p>T123534g234234gd3234</p>
-                    </td>
-                    <td>
-                        <p class="amount">20</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>03-07-2018</p>
-                    </td>
-                    <td>
-                        <p>T123534g234234gd3234</p>
-                    </td>
-                    <td>
-                        <p class="amount">20</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>03-07-2018</p>
-                    </td>
-                    <td>
-                        <p>T123534g234234gd3234</p>
-                    </td>
-                    <td>
-                        <p class="amount">20</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>03-07-2018</p>
-                    </td>
-                    <td>
-                        <p>T123534g234234gd3234</p>
-                    </td>
-                    <td>
-                        <p class="amount">20</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>03-07-2018</p>
-                    </td>
-                    <td>
-                        <p>T123534g234234gd3234</p>
-                    </td>
-                    <td>
-                        <p class="amount">20</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+        </section>
+        <section class="section-payments" id="payments">
+            <h2>Payments History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                            <p>Date</p>
+                        </td>
+                        <td>
+                            <p>Transaction ID</p>
+                        </td>
+                        <td>
+                            <p>Amount</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>03-07-2018</p>
+                        </td>
+                        <td>
+                            <p>T123534g234234gd3234</p>
+                        </td>
+                        <td>
+                            <p class="amount">20</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>03-07-2018</p>
+                        </td>
+                        <td>
+                            <p>T123534g234234gd3234</p>
+                        </td>
+                        <td>
+                            <p class="amount">20</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>03-07-2018</p>
+                        </td>
+                        <td>
+                            <p>T123534g234234gd3234</p>
+                        </td>
+                        <td>
+                            <p class="amount">20</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>03-07-2018</p>
+                        </td>
+                        <td>
+                            <p>T123534g234234gd3234</p>
+                        </td>
+                        <td>
+                            <p class="amount">20</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>03-07-2018</p>
+                        </td>
+                        <td>
+                            <p>T123534g234234gd3234</p>
+                        </td>
+                        <td>
+                            <p class="amount">20</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
     <footer>
         Copyright &copy; 2018
         <a href="https://cloud9ers.com/" target="_blank">Cloud Niners</a>. All rights are reserved.
